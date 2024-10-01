@@ -1,13 +1,32 @@
-import React from 'react';
-import Weather from './components/Weather';
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
 
 
 
+export default function MyFunction() {
+  const [inputValue, setInputValue] = useState('');
 
- export default function Home() {
-  return(
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
+  return (
+<div>
     <div>
-      <Weather/> 
-    </div>    
+    <div  onSubmit={handleSubmit}>
+      <input      
+        type="text" 
+        value={inputValue} 
+        onChange={(e) => setInputValue(e.target.value)} 
+        placeholder="Tapez quelque chose"
+      />
+<Link href={`/${encodeURIComponent(inputValue)}`}>
+        <button  type="submit">Appuie</button>
+      </Link>
+    </div>
+  </div>
+</div>
   );
 }

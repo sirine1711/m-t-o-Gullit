@@ -1,15 +1,23 @@
 
 
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 1254px) {
     
+  
+
+
     body{
         display: flex;
-        justify-content: flex-start; /* Aligne tout à gauche */
+        justify-content: center; /* Aligne tout à gauche */
         align-items: flex-start; /* Aligne également verticalement à gauche */
         flex-direction: column; /* Organise les éléments en colonne */
         width: 100%; /* Utilise toute la largeur */
         height: 100vh; /* Utilise toute la hauteur */
-        margin-left: 260px;     
+        margin-left: 260px; 
+        background-image: url("/assets/img/Fond.png");
+        background-size: cover; /* ou 'contain' selon votre besoin */
+        background-position: center; /* Aligne l'image au centre */
+        background-repeat: no-repeat; 
     }
 
     .DateFR {
@@ -106,7 +114,9 @@
         margin-top: 10px;
     }
     
-    
+    p{
+        font-size: 18px;
+    }
     
     .weather-row {
         display: flex;
@@ -206,11 +216,11 @@
     
     .weather-data2 .col span {
         display: block;
-        font-size: 10px;
+        font-size: 18px;
     }
     
     .weather-data2 .col img {
-        width: 15px;
+        width: 30px;
         margin-top: 10px;
     }
     
@@ -223,6 +233,7 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1254px) {
+
     body{
         display: flex;
         justify-content: flex-start; /* Aligne tout à gauche */
@@ -230,7 +241,11 @@
         flex-direction: column; /* Organise les éléments en colonne */
         width: 100%; /* Utilise toute la largeur */
         height: 100vh; /* Utilise toute la hauteur */
-        margin-left: 260px;     
+        margin-left: 260px; 
+        background-image: url("/assets/img/Fond.png");
+        background-size: cover; /* ou 'contain' selon votre besoin */
+        background-position: center; /* Aligne l'image au centre */
+        background-repeat: no-repeat;     
     }   
     .DateFR {
         color: white;
@@ -254,7 +269,9 @@
         align-items: center;
         justify-content: center;
     }
-    
+    p{
+        font-size: 18px;
+    }
     .search-bar {
         display: flex;
         align-items: center;
@@ -441,13 +458,23 @@
 
 
 @media only screen and (min-width: 426px) and (max-width: 1024px) {
+
+body{
+    background-image: url("/assets/img/Fond.png");
+    background-size: cover; /* ou 'contain' selon votre besoin */
+    background-position: center; /* Aligne l'image au centre */
+    background-repeat: no-repeat;  
+    
+}
     .DateFR {
         color: white;
         font-size: 55px;
         margin-bottom: 25px;
         place-self: center;
     }
-    
+    p{
+        font-size: 18px;
+    }
     .weather {
         position: relative;
         top: 10px;
@@ -552,7 +579,7 @@
     }
     
     .weather-containers {   
-        gap: 20px;
+        gap: 658x;
         justify-content: space-between;
         width: calc(100% - 400px); 
         margin-top: 60px;
@@ -564,8 +591,9 @@
     .weather-container2 {
         background-color: rgba(7, 72, 170, 0.659);
         width: 200px;
-        height: 300px;
+        height: 350px;
         border-radius: 20px;
+
         box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.1);
@@ -631,12 +659,22 @@
 }
 
 @media only screen and (min-width: 180px) and (max-width: 426px) {
+    body{
+        background-image: url("/assets/img/Fond.png");
+        background-size: cover; /* ou 'contain' selon votre besoin */
+        background-position: center; /* Aligne l'image au centre */
+        background-repeat: no-repeat;  
+    }
+    
+    
     .DateFR {
         color: white;
         font-size: 35px;
         margin-bottom: 25px;
     }
-    
+    p{
+        font-size: 18px;
+    }
     .weather {
         position: relative;
         top: 10px;
@@ -838,6 +876,15 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 180px) {
+    body{
+
+        background-image: url("/assets/img/Fond.png");
+        background-size: cover; /* ou 'contain' selon votre besoin */
+        background-position: center; /* Aligne l'image au centre */
+        background-repeat: no-repeat;  
+    }
+    
+    
     .DateFR {
         color: white;
         font-size: 25px;

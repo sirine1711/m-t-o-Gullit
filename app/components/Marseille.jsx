@@ -11,8 +11,9 @@ const rain = 'assets/img/rain.png'
 const search = 'assets/img/search.png'
 const snow = 'assets/img/snow.png'
 const wind = 'assets/img/wind.png'
+const backgrimg ='assets/img/Fond.png'
 
-const Weather = () => {
+const Marseille = () => {
   return (
     <div className="backgrimg">
       <div className="weather-row">
@@ -192,7 +193,8 @@ const Weather = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
-export default Weather;
+export default Marseille;
