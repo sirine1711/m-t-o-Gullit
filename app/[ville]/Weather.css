@@ -1,23 +1,19 @@
-
-
-
 @media only screen and (min-width: 1254px) {
     
-  
-
-
     body{
-        display: flex;
-        justify-content: center; /* Aligne tout à gauche */
-        align-items: flex-start; /* Aligne également verticalement à gauche */
-        flex-direction: column; /* Organise les éléments en colonne */
-        width: 100%; /* Utilise toute la largeur */
-        height: 100vh; /* Utilise toute la hauteur */
-        margin-left: 260px; 
+
         background-image: url("/assets/img/Fond.png");
         background-size: cover; /* ou 'contain' selon votre besoin */
         background-position: center; /* Aligne l'image au centre */
         background-repeat: no-repeat; 
+    }
+
+    
+}
+    .container-de-container{
+        margin-right: 250px;
+        margin-top: 100px;
+        justify-content: flex-start;
     }
 
     .DateFR {
@@ -28,12 +24,12 @@
     
     .weather {
         position: relative;
-        top: 10px;
+        top: 17px;
         place-self: center;
         padding: 40px;
         margin-left: 20px;
         width: 448px; 
-        max-height: 750px;
+        max-height: 650px;
         border-radius: 20px;
         background-image: linear-gradient(45deg, #2f4680, #500ae4);
         display: flex;
@@ -64,7 +60,7 @@
     }
     
     .search-bar img {
-        width: 50px;
+        width: 30px;
         padding: 15px;
         border-radius: 50%;
         background: #ebfffc;
@@ -72,8 +68,8 @@
     }
     
     .weather-icon {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         margin: 10px;
     }
     
@@ -91,7 +87,7 @@
     
     .weather-data {
         width: 100%;
-        margin-top: 45px;
+        margin-top: 35px;
         color: #fff;
         display: flex;
         justify-content: space-between;
@@ -134,23 +130,13 @@
         width: calc(100% - 400px); 
         margin-left: auto;
         margin-right: auto;
-        margin-top: 60px;
+        margin-top: 30px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
 
     }
     
-    .weather-container {
-        background-color: rgba(7, 72, 170, 0.659);
-        width: 250px;
-        height: 450px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        text-align: center;
-    }
+
     
     .weather-containers2 {   
         gap: 20px;
@@ -166,8 +152,8 @@
     .weather-container2 {
         background-color: rgba(7, 72, 170, 0.659);
         width: 250px;
-        height: 350px;
-        padding: 5px;
+        height: 320px;
+        padding: 15px;
         border-radius: 20px;
         box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(10px);
@@ -185,23 +171,24 @@
     
     .weather-icon2 {
         width: 60px;
-        margin: 10px 0;
+        margin-top: 5px;
     }
     
     .temperature2 {
         color: #fff;
         font-size: 32px;
         line-height: 1.1;
+        margin-top: 10px;
     }
     
     .location2 {
         color: #fff;
-        font-size: 18px;
+        font-size: 25px;
     }
     
     .weather-data2 {
         width: 100%;
-        margin-top: 5px;
+        margin-bottom: 15px;
         color: #fff;
         display: flex;
         justify-content: space-between;
@@ -224,13 +211,15 @@
         margin-top: 10px;
     }
     
+
+
     h1{
         font-size: 20px;
         color: white;
         
     }
 
-}
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1254px) {
 

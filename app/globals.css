@@ -1,0 +1,7 @@
+body{
+
+    background-image: url("/assets/img/Fond.png");
+    background-size: cover; /* ou 'contain' selon votre besoin */
+    background-position: center; /* Aligne l'image au centre */
+    background-repeat: no-repeat; 
+}
